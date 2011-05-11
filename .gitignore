@@ -1,0 +1,4 @@
+#OS Specific
+.DS_Store
+#Jekyll Specific
+_site
