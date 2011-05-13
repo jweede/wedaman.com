@@ -1,0 +1,43 @@
+@import "base.scss";
+
+$box-width: 20em;
+$box-margin: 0.3em;
+$box-height: 20em;
+$border-size: 0.2em;
+
+header {
+	text-align:center;
+}
+
+h3 {
+	font-family: monaco, courier, monospace;
+	font-size: 14pt;
+	color: $yellow;
+	margin-top: 0pt;
+	padding: 0.5em;
+	text-align: center;
+	border-bottom: solid $border-size;
+}
+
+pre {
+	font-family: monaco, courier, monospace;
+}
+
+.content {
+	margin: 0 auto;
+	width: $box-width*3+$box-margin*6+$border-size*6;
+}
+.box-content {
+	margin: 0.5em;
+}
+.related {
+	@extend .dark;
+	float: left;
+	margin: 0 auto;
+	width: $box-width;
+	height: $box-height;
+	margin: $box-margin;
+}
+.one   {border: $green solid $border-size;}
+.two   {border: $blue solid $border-size;}
+.three {border: $red solid $border-size;}

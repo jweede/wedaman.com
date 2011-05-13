@@ -1,0 +1,6 @@
+auto: true
+markdown: rdiscount
+sass: true
+permalink: /blerg/:year-:month-:day-:title
+rdiscount
+  extensions: [smart]

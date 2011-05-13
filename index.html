@@ -1,0 +1,32 @@
+---
+layout: layout
+title: jon@wedaman.com
+---
+
+<div class="content">
+  <div class="related one">
+    <h3>&gt;&gt; About Me &lt;&lt;</h3>
+    <div class="box-content">
+      
+    </div>
+  </div>
+  <div class="related two">
+    <h3>&gt;&gt; Related Work &lt;&lt;</h3>
+    <div class="box-content">
+      
+    </div>
+  </div>
+  <div class="related three">
+    <h3>&gt;&gt; Blog &lt;&lt;</h3>
+    <div class="box-content">
+    <code>while(true):jweede.do();</code>
+    <ul>
+      {% for post in site.posts %}
+      <li>
+	<span>{{ post.date | date: "%b %e, %y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div>
+  </div>
+</div>
