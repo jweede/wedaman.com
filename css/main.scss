@@ -1,9 +1,18 @@
-@import "base.scss";
+---
+published: false
+---
+@import "css/base.scss";
 
 $box-width: 20em;
 $box-margin: 0.3em;
 $box-height: 20em;
-$border-size: 0.2em;
+$border-size: 0.4em;
+
+@mixin rounded-corners( $radius )
+{
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+}
 
 header {
 	text-align:center;
@@ -12,26 +21,21 @@ header {
 h3 {
 	font-family: monaco, courier, monospace;
 	font-size: 14pt;
-	color: $yellow;
-	margin-top: 0pt;
+	margin: 0pt;
 	padding: 0.5em;
 	text-align: center;
-	border-bottom: solid $border-size;
-}
-
-pre {
-	font-family: monaco, courier, monospace;
 }
 
 .content {
 	margin: 0 auto;
-	width: $box-width*3+$box-margin*6+$border-size*6;
+	width: $box-width*2+$box-margin*4+$border-size*4;
 }
 .box-content {
 	margin: 0.5em;
 }
 .related {
-	@extend .dark;
+	@extend .light;
+	@include rounded-corners( $border-size*2 );
 	float: left;
 	margin: 0 auto;
 	width: $box-width;
@@ -41,3 +45,4 @@ pre {
 .one   {border: $green solid $border-size;}
 .two   {border: $blue solid $border-size;}
 .three {border: $red solid $border-size;}
+.four  {border: $yellow solid $border-size;}

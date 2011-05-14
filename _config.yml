@@ -1,6 +1,8 @@
 auto: true
 markdown: rdiscount
-sass: true
+pygments: true
+plugins: ./_plugins
+scss: true
 permalink: /blerg/:year-:month-:day-:title
-rdiscount
+rdiscount:
   extensions: [smart]
