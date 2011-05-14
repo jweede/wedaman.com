@@ -1,7 +1,9 @@
 ---
 published: false
 ---
+;
 @import "css/base.scss";
+@import "css/syntax.scss";
 
 $box-width: 20em;
 $box-margin: 0.3em;
@@ -13,19 +15,40 @@ $border-size: 0.4em;
 	border-radius: $radius;
 	-moz-border-radius: $radius;
 }
+@mixin colorBorder( $color ){
+	border: $color solid $border-size;
+}
+
+html {
+	font-family: monaco, courier, monospace;
+}
 
 header {
 	text-align:center;
+	span.domain {
+		color: $green;
+	}
+	span.prompt {
+		color: $red;
+	}
 }
-
+ul {list-style-type: none;}
 h3 {
-	font-family: monaco, courier, monospace;
+	color: $green;
 	font-size: 14pt;
 	margin: 0pt;
 	padding: 0.5em;
 	text-align: center;
 }
-
+.hoverTitle {
+	color: #F0F0F0;
+}
+.hoverBorder {
+	@include colorBorder($green);
+}
+.hoverNoBorder {
+	@include colorBorder($blue);
+}
 .content {
 	margin: 0 auto;
 	width: $box-width*2+$box-margin*4+$border-size*4;
@@ -34,7 +57,7 @@ h3 {
 	margin: 0.5em;
 }
 .related {
-	@extend .light;
+	//@extend .light;
 	@include rounded-corners( $border-size*2 );
 	float: left;
 	margin: 0 auto;
@@ -42,7 +65,3 @@ h3 {
 	height: $box-height;
 	margin: $box-margin;
 }
-.one   {border: $green solid $border-size;}
-.two   {border: $blue solid $border-size;}
-.three {border: $red solid $border-size;}
-.four  {border: $yellow solid $border-size;}

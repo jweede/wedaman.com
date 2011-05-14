@@ -1,5 +1,5 @@
 //$base03:    #002b36;
-$base03:    #002731;
+$base03:    #001216;
 $base02:    #073642;
 $base01:    #586e75;
 $base00:    #657b83;
@@ -33,9 +33,5 @@ html, .dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$ba
 html * {
     color-profile: sRGB;
     rendering-intent: auto;
-	font-family: Helvetica, Arial, sans-serif;
 	font-weight: lighter;
-}
-code {
-	font-family: monaco, courier, monospace;
 }
