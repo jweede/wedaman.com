@@ -1,13 +1,19 @@
 ---
 layout: layout
-title: jon@wedaman.com
+baseTitle: &#126;
 ---
 
 <div class="content">
   <div class="related hoverNoBorder">
-    <h3>» About Me «</h3>
+    <h3>» Blog «</h3>
     <div class="box-content">
-      
+    <ul>
+      {% for post in site.posts %}
+      <li>
+<a href="{{ post.url }}">{{ post.title }}</a> – <span>{{ post.date | date: "%b.%e.%y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
     </div>
   </div>
   <div class="related hoverNoBorder">
@@ -22,18 +28,19 @@ var work = {
     </div>
   </div>
   <div class="related hoverNoBorder">
-    <h3>» Blog «</h3>
+    <h3>» About Me «</h3>
     <div class="box-content">
-    <ul>
-      {% for post in site.posts %}
-      <li>
-<a href="{{ post.url }}">{{ post.title }}</a> – <span>{{ post.date | date: "%b.%e.%y" }}</span>
-      </li>
-      {% endfor %}
-    </ul>
+      <div class="textart">
+      <a href="aboutme.html">&lt;==</a>
+      </div>
     </div>
   </div>
   <div class="related hoverNoBorder">
     <h3>» Zeitgeist «</h3>
+    <div class="box-content">
+      <div class="textart">
+        <a href="zeitgeist.html">==&gt;</a>
+      </div>
+    </div>
   </div>
 </div>

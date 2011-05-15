@@ -18,19 +18,25 @@ $border-size: 0.4em;
 @mixin colorBorder( $color ){
 	border: $color solid $border-size;
 }
-
-html {
+body {
 	font-family: monaco, courier, monospace;
+	a {text-decoration: none;}
+	a:link { color:$blue; }
+	a:visited { color:$violet; }
+	a:hover { color:$red; }
+	a:active {color:$orange; }
 }
-
 header {
 	text-align:center;
-	span.domain {
-		color: $green;
-	}
-	span.prompt {
-		color: $red;
-	}
+	span.domain {color: $green;}
+	span.prompt {color: $red;}
+	span.locale {color: $magenta;}
+}
+footer {
+	clear: both;
+	font-size: 7.5pt;
+	text-align: center;
+	
 }
 ul {list-style-type: none;}
 h3 {
@@ -40,14 +46,16 @@ h3 {
 	padding: 0.5em;
 	text-align: center;
 }
+.textart {
+	font-size: 48pt;
+	text-align: center;
+	margin: 1em auto;
+}
 .hoverTitle {
 	color: #F0F0F0;
 }
-.hoverBorder {
+.related:hover {
 	@include colorBorder($green);
-}
-.hoverNoBorder {
-	@include colorBorder($blue);
 }
 .content {
 	margin: 0 auto;
@@ -58,6 +66,7 @@ h3 {
 }
 .related {
 	//@extend .light;
+	@include colorBorder($blue);
 	@include rounded-corners( $border-size*2 );
 	float: left;
 	margin: 0 auto;

@@ -4,18 +4,26 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="author" content="Jon Wedaman" />
-    <title>{{ page.title }}</title>
+    <title>jon@wedaman.com:{{ page.baseTitle }}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
     <link href="{{ page.media_dir }}css/main.css" rel="stylesheet" type="text/css">
     <script src="{{ page.media_dir }}js/main.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
-      <h1><span class="domain">{{ page.title }}</span>&nbsp;<span class="prompt">$</span>&nbsp;<span class="blink">_</span>
+      <h1><span class="domain">jon@wedaman.com</span>:<span class="locale">{{ page.baseTitle }}{{ page.title }}</span>&nbsp;<span class="prompt">$</span>&nbsp;<span class="blink">_</span>
 </h1>
     </header>
     <section>
       {{ content }}
     </section>
+  <footer>
+    Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+—
+    Color scheme is <a href="http://ethanschoonover.com/solarized">Solarized</a>
+—
+    <a href="http://github.com">Socially Coded</a>
+  </footer>
+
   </body>
 </html>

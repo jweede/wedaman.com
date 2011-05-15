@@ -8,14 +8,9 @@ $(function(){
     
     $('.related').hover(
     function(){
-        $(this).removeClass('hoverNoBorder');
-        $(this).addClass('hoverBorder');
         $(this).children('h3').addClass('hoverTitle');
     },
-    function(){ 
-        $(this).removeClass('hoverBorder');
-        $(this).addClass('hoverNoBorder');
+    function(){
         $(this).children('h3').removeClass('hoverTitle');
-    }
-    );
+    } );
 });
