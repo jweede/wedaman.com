@@ -18,6 +18,13 @@ $border-size: 0.4em;
 @mixin colorBorder( $color ){
 	border: $color solid $border-size;
 }
+@mixin linkcolor( $color ){
+	color: $color;
+	a:link { color:$color; }
+	a:visited { color:$color; }
+	a:hover { color:$red; }
+	a:active {color:$orange; }
+}
 body {
 	font-family: monaco, courier, monospace;
 	a {text-decoration: none;}
@@ -28,9 +35,9 @@ body {
 }
 header {
 	text-align:center;
-	span.domain {color: $green;}
+	span.domain{ @include linkcolor( $green ); }
 	span.prompt {color: $red;}
-	span.locale {color: $magenta;}
+	span.locale {@include linkcolor( $magenta );}
 }
 footer {
 	clear: both;
@@ -87,20 +94,10 @@ h3 {
 		font-size: 10pt;
 	}
 	padding: 1em 2em;
-	font-family: palatino, times, serif;
-}
-/*
-nav {
-	text-align: center;
-	position: relative;
-	margin: 0 auto;
-	height: 14pt;
-	ul {
-		list-style-type: none;
-		clear: both;
-		li {
-			float: left;
-			margin: 0 3em;
-		}
+	font-family: palatino, garamond, times, serif;
+	blockquote { 
+		margin-left: 1em;
+		padding-left: 1em;
+		border-left: $border-size solid $orange;
 	}
-} */
+}
