@@ -38,7 +38,6 @@ footer {
 	text-align: center;
 	
 }
-ul {list-style-type: none;}
 h3 {
 	color: $green;
 	font-size: 14pt;
@@ -73,4 +72,35 @@ h3 {
 	width: $box-width;
 	height: $box-height;
 	margin: $box-margin;
+	ul {
+		list-style-type: none;
+		font-size: 11pt;
+	}
 }
+#post {
+	@include colorBorder($blue);
+	@include rounded-corners( $border-size*2 );
+	h1 { color:$orange; margin-top:0; }
+	p.date { 
+		margin-bottom: 2pt; 
+		margin-left: 1em;
+		font-size: 10pt;
+	}
+	padding: 1em 2em;
+	font-family: palatino, times, serif;
+}
+/*
+nav {
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	height: 14pt;
+	ul {
+		list-style-type: none;
+		clear: both;
+		li {
+			float: left;
+			margin: 0 3em;
+		}
+	}
+} */
