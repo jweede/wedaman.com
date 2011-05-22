@@ -1,3 +1,3 @@
-# Testing
+# Wedaman.com
 
-1 2 3
+Personal website generated with [Jekyll](https://github.com/mojombo/jekyll)
