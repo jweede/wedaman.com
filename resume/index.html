@@ -63,7 +63,7 @@ resume: {
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" charset="utf-8">
- <meta name="description" content="{{ Name }}'s Resume, Updated {{ CurrentDate }}">
+ <meta name="description" content="{{ page.resume.Name }}'s Resume, Updated {{ 'now' | date: "%Y.%m.%d" }}">
  <meta name="keywords" content="jon, wedaman, resume, jweede">
  <!--
  <link rel="shortcut icon" href="resume.ico" />
@@ -100,8 +100,8 @@ resume: {
 
 
 <h2>Skills</h2>
-<p>Platforms:  {{ page.resume.Skills.Platforms| array_to_sentence_string }}</p>
-<p>Languages:  {{ page.resume.Skills.Languages| array_to_sentence_string }}</p>
+<p>Platforms:  {{ page.resume.Skills.Platforms | array_to_sentence_string }}</p>
+<p>Languages:  {{ page.resume.Skills.Languages | array_to_sentence_string }}</p>
 <p>&nbsp;&nbsp;</p>
 
 <h2>Activities</h2>
