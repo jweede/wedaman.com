@@ -11,5 +11,12 @@ publish: build
 	  --exclude=".htaccess" \
 	  ./_site/ wedaman@wedaman.com:public_html/;
 
+# convenience target
+serve:
+	@jekyll --server
+
+all: publish
+
+# also unneccesary
 clean:
 	rm -r ./_site
