@@ -4,12 +4,14 @@ build:
 
 publish: build
 	@echo "-*-  Publishing... -*-";
-	rsync -avz \
-	  --delete \
-	  --exclude="lavergne.gotdns.org/" \
-	  --exclude="cgi-bin/" \
-	  --exclude=".htaccess" \
-	  ./_site/ wedaman@wedaman.com:public_html/;
+    #rsync -avz \
+	#  --delete \
+	#  --exclude="lavergne.gotdns.org/" \
+	#  --exclude="cgi-bin/" \
+	#  --exclude=".htaccess" \
+	#  ./_site/ wedaman@wedaman.com:public_html/;
+	@dotcloud push wedaman.www ./_site/;
+	@echo "-*- We'll do it live! -*-";
 
 # convenience target
 serve:
