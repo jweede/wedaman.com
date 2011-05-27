@@ -6,4 +6,4 @@ scss: true
 permalink: /blerg/:year-:month-:day-:title
 rdiscount:
   extensions: [smart]
-exclude: [ publish ]
+exclude: [ Makefile, zeitgeist, aboutme ]
