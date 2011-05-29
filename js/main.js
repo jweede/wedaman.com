@@ -1,8 +1,8 @@
 $(function(){
     window.setInterval(
     function(){
-        var nextView = $("span.blink").css('visibility') === 'hidden' ? 'visible' : 'hidden';
-        $("span.blink").css('visibility', nextView);
+        var nextView = $("span.blink").text() === '_' ? '\u00A0' : '_';
+        $("span.blink").text(nextView);
     }
     , 800);
     

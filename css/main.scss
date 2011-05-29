@@ -34,7 +34,7 @@ body {
 	a:active {color:$orange; }
 }
 header {
-	font-family: courier, monospace;
+	font-family: "Courier New", courier, monospace;
 	text-align:center;
 	span.domain{ @include linkcolor( $green ); }
 	span.prompt {color: $red;}
