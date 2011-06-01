@@ -41,10 +41,10 @@ header {
 	span.locale {@include linkcolor( $magenta );}
 }
 footer {
+	margin: 0 auto;
 	clear: both;
 	font-size: 7.5pt;
 	text-align: center;
-	
 }
 h3 {
 	color: $green;
