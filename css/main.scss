@@ -85,19 +85,3 @@ h3 {
 		font-size: 11pt;
 	}
 }
-#post {
-	@include colorBorder($blue);
-	@include rounded-corners( $border-size*2 );
-	h1 { color:$orange; margin-top:0; }
-	p.date { 
-		margin-bottom: 2pt; 
-		margin-left: 1em;
-		font-size: 10pt;
-	}
-	padding: 1em 2em;
-	blockquote { 
-		margin-left: 1em;
-		padding-left: 1em;
-		border-left: $border-size solid $orange;
-	}
-}
