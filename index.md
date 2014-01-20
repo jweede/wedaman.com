@@ -9,7 +9,7 @@
 
 <header>
 <h1><a class="domain" href="/">jon@wedaman.com</a>:<span class="locale"><a href="/">~</a></span>
-    <span class="prompt">$$</span>
+    <span class="prompt">$</span>
     <span class="blink" id="blinkCursor">_</span>
 </h1>
 </header>
@@ -38,6 +38,8 @@ Probably a good software developer.
 [GitHub Profile](https://github.com/jweede)
 
 [StackOverflow Profile](http://stackoverflow.com/users/54283/jon-w)
+
+[LinkedIn Profile](http://www.linkedin.com/in/jonwedaman/)
 
 </div>
 </section>

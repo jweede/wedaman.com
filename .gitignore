@@ -1,2 +1,4 @@
-#OS Specific
+# OS Specific
 .DS_Store
+# App Specific
+_site/
