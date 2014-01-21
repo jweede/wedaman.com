@@ -1,120 +1,49 @@
----
-title: resume
-media_dir: ../
-resume: {
-	Name: Jon Wedaman,
-	Email_human: "jon.wedaman{at}gmail{dot}com",
-	Email: jon.wedaman@gmail.com,
-	"Phone": "513.549.6424",
-	"Education": [
-		{
-			"Name":   "University of Cincinnati",
-			"Locale": "Cincinnati, OH",
-			"Dept":   "College of Engineering",
-			"Degree": "Bachelors in Computer Science",
-			"Year":   "2011"
-		}
-	],
-	"Experience": [
-        {
-            "Company":  "IBM",
-            "Locale":   "Boston, MA",
-            "Dates":    "July 2011 - Present",
-            "Title":    "Developer",
-            "Desc":     "Worked to maintain and augment an XSLT compiler for an embedded network appliance in the Datapower division. Specifically added globalization features, enhanced testing frameworks, and aided in 64-bit compatibility."
-        },
-        {
-			"Company": "University of Cincinnati",
-			"Locale":  "Cincinnati, OH",
-			"Dates":   "Jan 2008 - July 2011",
-			"Title":   "Supervisor",
-			"Desc":    "Front-line support and management of university computer laboratories. Used limited resources to provide top-quality help-desk support to the university's growing population."
-		},
-	    {
-			"Company": "IBM",
-			"Locale":  "Boston, MA",
-			"Dates":   "July 2010 - Sept 2010",
-			"Title":   "Intern",
-			"Desc":    "Selected for IBM's Summer Speedteam. Worked closely with the Lotus division to brainstorm, prototype, and test new features. Presented directly to senior executives."
-		},
-#        {
-#           "Company":  "Cincinnati Children's Hospital",
-#           "Locale":   "Cincinnati, OH",
-#           "Dates":    "March 2010 - July 2010",
-#           "Title":    "Web Developer",
-#           "Desc":     "I will never put this job on my resume"
-#        },
-        {
-			"Company": "Great American Insurance Company",
-			"Locale":  "Cincinnati, OH",
-			"Dates":   "Jan 2009 - Sept 2009",
-			"Title":   "Intern",
-			"Desc":    "Maintained enterprise XML interdepartmental systems. Extensive work in XSLT, Java, Apache Ant, and XML Schema. Implemented broad changes in a fast, efficient manner. Developed testing framework still in use today."
-		}
-#		{
-#			"Company": "Apple, Inc.",
-#			"Locale":  "Cincinnati, OH",
-#			"Dates":   "Sept 2004 - Jan 2008",
-#			"Title":   "Admin",
-#			"Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
-#		}
-	],
-	Skills: {
-		Platforms: ["Mac OS X", "Debian/Fedora Linux", "BSD", "Windows"],
-		Languages: ["Java", "Ant", "C", "C++", "Objective-C", "Python", "Haskell", "XML", "XSD", "XSLT", "HTML/CSS", "Javascript", "JQuery", "even COBOL"]
-	},
-	Activities: ["IBM Extreme Blue Finalist 2010", "ACM Student Chapter - Treasurer 2009", "ACM Student Chapter - President 2010", "Tazamahal - Treasurer 2008 to 2011"]
-}
----
 <!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" charset="utf-8">
- <meta name="description" content="{{ page.resume.Name }}'s Resume, Updated {{ 'now' | date: "%Y.%m.%d" }}">
+ <meta name="description" content="{{ resume.Name }} Resume, Updated {{ publish date }}">
  <meta name="keywords" content="jon, wedaman, resume, jweede">
- <!--
- <link rel="shortcut icon" href="resume.ico" />
- -->
- <link rel="stylesheet" href="{{page.media_dir}}css/resume.css">
+ <link rel="stylesheet" href="/css/resume.css">
  <script type="text/javascript">
  </script>
- <title>Resume: {{ page.resume.Name }}</title>
+ <title>Resume: {{ resume.Name }}</title>
 </head>
 <body>
 
 <div id="pageContainer">
 
 <div class="resumeHeader">
-	<h1>{{ page.resume.Name }}</h1>
-	<p class="contactInfo"><a href="mailto:{{ page.resume.Email }}" style="color:#777;">{{ page.resume.Email_human }}</a></p>
-	<p class="contactInfo">{{ page.resume.Phone }}</p>
+	<h1>{{ resume.Name }}</h1>
+	<p class="contactInfo"><a href="mailto:{{ resume.Email }}" style="color:#777;">{{ resume.Email_human }}</a></p>
+	<p class="contactInfo">{{ resume.Phone }}</p>
 </div>
 <div class="resumeBody">
 <h2>Education</h2>
-{% for edu in page.resume.Education %}
-<p>{{ edu.Name }}. {{ edu.Locale }}.</p>
-<p>{{ edu.Dept }}</p>
-<p>{{ edu.Degree }}. {{ edu.Year }}.</p>
+{{ #resume.Education }}
+<p>{{ Name }}. {{ Locale }}.</p>
+<p>{{ Dept }}</p>
+<p>{{ Degree }}. {{ Year }}.</p>
 <p>&nbsp;&nbsp;</p>
-{% endfor %}
+{{ /resume.Education }}
 
 <h2>Experience</h2>
-{% for exp in page.resume.Experience %}
-<p class="expSecHead">{{ exp.Company }} - {{ exp.Locale }} &nbsp;({{ exp.Dates }})</p>
-<p class="expSecTitle">{{ exp.Title }}</p>
-<p class="expSecDesc">{{ exp.Desc }}</p>
-{% endfor %}
+{{ #resume.Experience }}
+<p class="expSecHead">{{ Company }} - {{ Locale }} &nbsp;({{ Dates }})</p>
+<p class="expSecTitle">{{ Title }}</p>
+<p class="expSecDesc">{{ Desc }}</p>
+{{ /resume.Experience }}
 
 
 <h2>Skills</h2>
-<p>Platforms:  {{ page.resume.Skills.Platforms | array_to_sentence_string }}</p>
-<p>Languages:  {{ page.resume.Skills.Languages | array_to_sentence_string }}</p>
+<p>Platforms:  {{ resume.Skills.Platforms }}</p>
+<p>Languages:  {{ resume.Skills.Languages }}</p>
 <p>&nbsp;&nbsp;</p>
 
 <h2>Activities</h2>
-{% for item in page.resume.Activities %}
-   <p>{{ item }}</p>
-{% endfor %}
+{{ #resume.Activities }}
+   <p>{{ . }}</p>
+{{ /resume.Activities }}
 <p>&nbsp;&nbsp;</p>
 
 </div>
