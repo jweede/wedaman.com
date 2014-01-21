@@ -9,7 +9,7 @@ prereq:
 build: prereq
 	# generate index
 	pandoc -f markdown -t html5 -o ./_site/index.html ./index.md;
-	pandoc -f markdown -t html5 -o ./_site/resume/index.html resume.md;
+	cd ./resume && python generate_resume.py
 	# less -> css
 	lessc ./less/default.less ./_site/css/default.css
 	lessc ./less/resume.less ./_site/css/resume.css

@@ -26,9 +26,9 @@ Probably a good software developer.
 
 ## Resume
 
-[Web](/resume/resume.html)
+[Web](/resume/index.html)
 
-[PDF](/resume/resume.pdf)
+<!-- [PDF](/resume/resume.pdf) -->
 
 </div>
 <div class="block">
