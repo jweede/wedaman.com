@@ -19,7 +19,7 @@ build: prereq
 
 publish: build
 	echo "-*-  Publishing... -*-";
-	echo "-*-  ...Not Really -*-";
+	s3cmd sync _site/ s3://wedaman.com/
 	#rsync -avz \
 	#  --delete \
 	#  --exclude="lavergne.gotdns.org/" \

@@ -19,13 +19,6 @@
 	<p class="contactInfo">{{ resume.Phone }}</p>
 </div>
 <div class="resumeBody">
-<h2>Education</h2>
-{{ #resume.Education }}
-<p>{{ Name }}. {{ Locale }}.</p>
-<p>{{ Dept }}</p>
-<p>{{ Degree }}. {{ Year }}.</p>
-<p>&nbsp;&nbsp;</p>
-{{ /resume.Education }}
 
 <h2>Experience</h2>
 {{ #resume.Experience }}
@@ -34,19 +27,29 @@
 <p class="expSecDesc">{{ Desc }}</p>
 {{ /resume.Experience }}
 
+<h2>Education</h2>
+{{ #resume.Education }}
+<p>{{ Name }}. {{ Locale }}.</p>
+<p>{{ Dept }}</p>
+<p>{{ Degree }}. {{ Year }}.</p>
+<p>&nbsp;&nbsp;</p>
+{{ /resume.Education }}
 
 <h2>Skills</h2>
-<p>Platforms:  {{ resume.Skills.Platforms }}</p>
-<p>Languages:  {{ resume.Skills.Languages }}</p>
+{{ #resume.Skills }}
+<p><i>{{name}}</i>: {{list}}</p>
+{{ /resume.Skills }}
 <p>&nbsp;&nbsp;</p>
 
 <h2>Activities</h2>
 {{ #resume.Activities }}
-   <p>{{ . }}</p>
+<p>{{ . }}</p>
 {{ /resume.Activities }}
 <p>&nbsp;&nbsp;</p>
 
 </div>
+
+<p class="selfLink">Latest: <a href="http://wedaman.com/resume/">http://wedaman.com/resume/</a></p>
 
 </div>
 

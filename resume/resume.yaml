@@ -17,21 +17,21 @@ resume: {
         { "Company": "Bullhorn"
         , "Locale": "Boston, MA"
         , "Dates": "May 2012 - Present"
-        , "Title": "Software Developer"
-        , "Desc": "Refactored, improved, and implemented new features for a decade-old contact management system. Essential in design and implementation of cross-platform support feature for said CMS. Instrumented company-wide process improvement such as: moving from SVN to Git; better code review practices; better development environments; and more reliable release rollout."
+        , "Title": "Senior Software Developer"
+        , "Desc": "Overhauled a decade-old contact management system. Essential in design and implementation of HTML5 standards support for a previously IE-only (quirks mode) product. Instrumented company-wide process improvements such as: moving from SVN to Git; code review practices; provisioned development environments; and more reliable release rollout."
         },
         {
             "Company":  "IBM",
             "Locale":   "Boston, MA",
             "Dates":    "July 2011 - May 2012",
-            "Title":    "Developer",
-            "Desc":     "Worked to maintain and augment an XSLT compiler for an embedded network appliance in the Datapower division. Specifically added globalization features, enhanced testing frameworks, and aided in 64-bit compatibility."
+            "Title":    "Software Developer",
+            "Desc":     "Implemented new features for an XSLT compiler, updated codebase for internationalization, and ported network appliance to 64-bit."
         },
         {
             "Company": "University of Cincinnati",
             "Locale":  "Cincinnati, OH",
             "Dates":   "Jan 2008 - July 2011",
-            "Title":   "Supervisor",
+            "Title":   "Lab Supervisor",
             "Desc":    "Front-line support and management of university computer laboratories. Used limited resources to provide top-quality help-desk support to the university's growing population."
         },
         {
@@ -63,9 +63,14 @@ resume: {
 #           "Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
 #       }
     ],
-    Skills: {
-        Platforms: ["Mac OS X", "Debian/Fedora Linux", "BSD", "Windows"],
-        Languages: ["Java", "Ant", "C", "C++", "Objective-C", "Python", "Haskell", "XML", "XSD", "XSLT", "HTML/CSS", "Javascript", "JQuery", "even COBOL"]
-    },
+    Skills: [
+      {name: "Tech Experience"
+      ,list: ["Debian/Fedora Linux", "Mac OS X", "Java", "Python", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion"]
+      }
+      ,
+      {name: "Soft Skills"
+      ,list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
+      }
+    ],
     Activities: ["IBM Extreme Blue Finalist 2010", "ACM Student Chapter - Treasurer 2009", "ACM Student Chapter - President 2010", "Tazamahal - Treasurer 2008 to 2011"]
 }

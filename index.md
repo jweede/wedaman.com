@@ -26,7 +26,7 @@ Probably a good software developer.
 
 ## Resume
 
-[Web](/resume/index.html)
+[Web](/resume/)
 
 <!-- [PDF](/resume/resume.pdf) -->
 
