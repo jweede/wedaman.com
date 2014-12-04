@@ -1,0 +1,73 @@
+https://keybase.io/jweede
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://wedaman.com
+  * I am jweede (https://keybase.io/jweede) on keybase.
+  * I have a public key with fingerprint 8967 C1BF FF9D C7B9 2D98  EA3B 2FDE D7F5 C38A 61B7
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "8967c1bfff9dc7b92d98ea3b2fded7f5c38a61b7",
+            "host": "keybase.io",
+            "key_id": "2FDED7F5C38A61B7",
+            "uid": "1d1c73d142a518332b2fe945b749f300",
+            "username": "jweede"
+        },
+        "merkle_root": {
+            "ctime": 1413859447,
+            "hash": "cb7ecd14f1cf5292d0f4afddb66812185edb5f32b8e25e6174683a7af872d731dd567393125395e7ff8b69b84c1ff2ed25cfb612ac771f07fb24f80612fb5f0f",
+            "seqno": 82110
+        },
+        "service": {
+            "hostname": "wedaman.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1413859660,
+    "expire_in": 157680000,
+    "prev": "f7145685ab1fb6f0222b7e68e2caa60e8ed5e9dbd9d70e78d46296e486c5625c",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFVkn9oVlUYx993ZrGBmZBJZirXwsyX13vOuefHfZWhbe+SEAXNwAm9nJ/bndu9
+7+59tzl0YLSUAoeQ/REpllBjTATBldL+SkXUlkbKZAhaQ6cx+rHCP7Kwc9eiPH+d
+H9/n8zzf5zkH5szKVGX7NqG18/uPTmQv3ROZ14sXNuxyRKS6ncIuR7YGOqyku5C3
+aafg7NDdgic6H0RLw0jpfEuydEaTczp1nARRaFVunuah05NL5WmwCcImHZfjIGU5
+zCdUAmGM8ZWkwofKZ5ojAY3SihosEeMECGqRzVFSeSSrM80sBcrewob6Yj1twHWI
+rSPglVTfMf0AFJAUKeBBjgFDCFq09j0sqOcb5LqpMNHxjKWWLq2VTqtt0/GOVl2K
+o2jasqwEqQB4ADHsex619fCk2YZIQbW0fAOkwdAacI3HjVKCEAYgYFgrgY3NyzTE
+mgDqEYY45YZRqCgCSmFCkY8AxMjHmhrDBPEF8yQwBmoFsTSCAMglpcC41AjoGeba
+G2O5rrEGEt0eRk6BQQDcnvQYdwZSp2WnPZux1qUVb+NhXkZtNqQcR5VIRq32oblS
+KRdSy5Xu8j9CUUoRA5ZREkGo7MD+P1FgpY+2gxA35+id5SDWpSBVYEqYa1eaR3da
+pqHAw4RhLoA1Y1wIoW0bsS2RnBNXM62w9pVQvqKupkx5BPpEe4xITGwH/jOJbJ28
+ySKToCnklY7YTuvd7KLHMtmqzOOzq9Ivm6mpfurff/wpeuJh8tXYkvHPDl7uaTiz
+bFFjIszgwGRV+6nh9ZNHfr3V/wL668/BH591pt66MTL2MRz/pvrmD9tqX/3wIJg6
+tufrmitvnrpy5HzHg/uZ3k/OHd4yWTd7XqnJLVaT4r3Xdo/u+W74xd9qr57c9NPt
+nbs3jH7wzty7t9Y0rhT7g9Lk5vE/BtzCvHDhgok1eNt7N9FZb9+S43vvfC5X/XJ6
+7JlrjevXnTjx0bHtNfWrtl8uHj7w9IMvu3JTX7w9+P4bG+tWtvSN9u27+O2dtasX
+r9g6Mv/64qFlZsV+5/r3D4+e7sV3fx+aOHThWnX//ezWic7h5QvnHl/90s+bb5Oh
+Wpkr7qVPvpw99PxzI+3Nc/p70d8=
+=PV1d
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jweede
