@@ -1,6 +1,6 @@
 import pystache, yaml
 
-YAML_FILE='resume.yaml'
+YAML_FILE='resume.yml'
 TEMPLATE_FILE='index.html'
 OUTPUT_FILE='../_site/resume/index.html'
 
