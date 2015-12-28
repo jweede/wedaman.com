@@ -1,10 +1,11 @@
+---
 title: resume
-resume: {
-    Name: Jon Wedaman,
-    Email_human: "jon.wedaman{at}gmail{dot}com",
-    Email: jon.wedaman@gmail.com,
-    "Phone": "513.549.6424",
-    "Education": [
+resume:
+    Name: Jon Wedaman
+    Email_human: "jon.wedaman{at}gmail{dot}com"
+    Email: jon.wedaman@gmail.com
+    Phone: "513.549.6424"
+    Education: [
         {
             "Name":   "University of Cincinnati",
             "Locale": "Cincinnati, OH",
@@ -12,11 +13,17 @@ resume: {
             "Degree": "Bachelors in Computer Science",
             "Year":   "2011"
         }
-    ],
-    "Experience": [
+    ]
+    Experience: [
+        { "Company": "Shoobx",
+          "Locale": "Boston, MA",
+          "Dates": "February 2015 - Present",
+          "Title": "Platform Developer",
+          "Desc": "Worked with a small team to build a new auto-scaling infrastructure with AWS, Ansible, Jenkins, Postgres, Python. Assisted with ISO security audit. Researched and Deployed new dev tools such as GitLab, Jenkins/LDAP integration.",
+        },
         { "Company": "Rue La La"
         , "Locale": "Boston, MA"
-        , "Dates": "April 2014 - Present"
+        , "Dates": "April 2014 - February 2015"
         , "Title": "Platform Developer"
         , "Desc": "Optimized, refactored, and built new full-stack features for large Django App which involved Python, Nginx, Lua, MySQL, and legacy Java. Built a new continuous deployment system with Jenkins, Ansible. Created and fostered adoption for new dev environments utilizing Vagrant, Ansible, CentOS/RHEL 7. Mentored junior devs directly and through code reviews."
         },
@@ -47,28 +54,28 @@ resume: {
             "Title":   "Intern",
             "Desc":    "Selected for IBM's Summer Speedteam. Worked closely with the Lotus group to brainstorm, prototype, and test new features. Presented directly to senior executives."
         },
-#        {
-#           "Company":  "Cincinnati Children's Hospital",
-#           "Locale":   "Cincinnati, OH",
-#           "Dates":    "March 2010 - July 2010",
-#           "Title":    "Web Developer",
-#           "Desc":     "I will never put this job on my resume"
-#        },
-#        {
-#            "Company": "Great American Insurance Company",
-#            "Locale":  "Cincinnati, OH",
-#            "Dates":   "Jan 2009 - Sept 2009",
-#            "Title":   "Intern",
-#            "Desc":    "Maintained enterprise XML interdepartmental systems. Extensive work in XSLT, Java, Apache Ant, and XML Schema. Implemented broad changes in a fast, efficient manner."
-#        }
-#       {
-#           "Company": "Apple, Inc.",
-#           "Locale":  "Cincinnati, OH",
-#           "Dates":   "Sept 2004 - Jan 2008",
-#           "Title":   "Admin",
-#           "Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
-#       }
-    ],
+        #        {
+        #           "Company":  "Cincinnati Children's Hospital",
+        #           "Locale":   "Cincinnati, OH",
+        #           "Dates":    "March 2010 - July 2010",
+        #           "Title":    "Web Developer",
+        #           "Desc":     "I will never put this job on my resume"
+        #        },
+        #        {
+        #            "Company": "Great American Insurance Company",
+        #            "Locale":  "Cincinnati, OH",
+        #            "Dates":   "Jan 2009 - Sept 2009",
+        #            "Title":   "Intern",
+        #            "Desc":    "Maintained enterprise XML interdepartmental systems. Extensive work in XSLT, Java, Apache Ant, and XML Schema. Implemented broad changes in a fast, efficient manner."
+        #        }
+        #       {
+        #           "Company": "Apple, Inc.",
+        #           "Locale":  "Cincinnati, OH",
+        #           "Dates":   "Sept 2004 - Jan 2008",
+        #           "Title":   "Admin",
+        #           "Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
+        #       }
+    ]
     Skills: [
       {name: "Tech Experience"
       ,list: ["Debian/Fedora Linux", "Mac OS X", "Python", "Java", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion"]
@@ -77,6 +84,8 @@ resume: {
       {name: "Soft Skills"
       ,list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
       }
-    ],
-    Activities: ["IBM Extreme Blue Finalist 2010", "ACM Student Chapter - Treasurer 2009", "ACM Student Chapter - President 2010"]
-}
+    ]
+    Activities: 
+        - IBM Extreme Blue Finalist 2010
+        - ACM Student Chapter - President 2010
+        - ACM Student Chapter - Treasurer 2009
