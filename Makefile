@@ -1,34 +1,45 @@
 # Simple Makefile
-.SILENT: 
+DIST := _site
+DIRS := $(DIST) $(DIST)/resume $(DIST)/css
+COPIED := keybase.txt favicon.ico
+LESS := $(wildcard less/*.less)
 
-prereq: 
-	mkdir -p _site
-	mkdir -p _site/resume
-	mkdir -p _site/css
+$(DIRS):
+	mkdir -p $@
 
-build: prereq
-	# generate index
-	pandoc -f markdown -t html5 -o ./_site/index.html ./index.md;
-	cd ./resume && python generate_resume.py
-	cp keybase.txt ./_site/
-	# less -> css
-	lessc ./less/default.less ./_site/css/default.css
-	lessc ./less/resume.less ./_site/css/resume.css
-	# other resources
-	cp ./favicon.ico ./_site/
+$(COPIED): $(DIST)
+	cp -l $@ ./$(DIST)/
+
+$(DIST)/index.html: index.md $(DIST)
+	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md
+
+$(DIST)/resume/index.html: $(DIST)/resume/%.%
+	./resume/generate_resume.py
+
+$(DIST)/css/%.css: $(DIST)/css less/%.less
+	lessc less/$(pathsubst %.css,%.less,$(notdir $@)) $@
+
+.PHONY: build
+build: $(DIRS) $(DIST)/index.html \
+		$(addprefix $(DIST)/,$(COPIED)) \
+		$(addprefix $(DIST)/css/,$(pathsubst %.less,%.css,$(notdir $(LESS))))
 	echo "-*- Site Generated -*-";
 
+.PHONY: publish
 publish: build
 	echo "-*-  Publishing... -*-";
-	s3cmd sync _site/ s3://wedaman.com/
+	aws s3 sync --delete _site/ s3://wedaman.com/
 	echo "-*- We'll do it live! -*-";
 
 # convenience target
+.PHONY: serve
 serve: build
 	cd ./_site && python -m SimpleHTTPServer
 
+.PHONY: all
 all: publish
 
 # also unneccesary
+.PHONY: clean
 clean:
 	rm -r ./_site

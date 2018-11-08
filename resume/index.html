@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" charset="utf-8">
- <meta name="description" content="{{ resume.Name }} Resume, Updated {{ publish date }}">
+ <meta name="description" content="{{ resume.Name }} Resume, Updated {{ publish_date }}">
  <meta name="keywords" content="jon, wedaman, resume, jweede">
  <link rel="stylesheet" href="/css/resume.css">
  <script type="text/javascript">
@@ -21,30 +21,30 @@
 <div class="resumeBody">
 
 <h2>Experience</h2>
-{{ #resume.Experience }}
-<p class="expSecHead">{{ Company }} - {{ Locale }} &nbsp;({{ Dates }})</p>
-<p class="expSecTitle">{{ Title }}</p>
-<p class="expSecDesc">{{ Desc }}</p>
-{{ /resume.Experience }}
+{% for exp in resume.Experience -%}
+<p class="expSecHead">{{ exp.Company }} - {{ exp.Locale }} &nbsp;({{ exp.Dates }})</p>
+<p class="expSecTitle">{{ exp.Title }}</p>
+<p class="expSecDesc">{{ exp.Desc }}</p>
+{% endfor -%}
 
 <h2>Education</h2>
-{{ #resume.Education }}
-<p>{{ Name }}. {{ Locale }}.</p>
-<p>{{ Dept }}</p>
-<p>{{ Degree }}. {{ Year }}.</p>
+{% for edu in resume.Education -%}
+<p>{{ edu.Name }}. {{ edu.Locale }}.</p>
+<p>{{ edu.Dept }}</p>
+<p>{{ edu.Degree }}. {{ edu.Year }}.</p>
 <p>&nbsp;&nbsp;</p>
-{{ /resume.Education }}
+{% endfor -%}
 
 <h2>Skills</h2>
-{{ #resume.Skills }}
-<p><i>{{name}}</i>: {{list}}</p>
-{{ /resume.Skills }}
+{% for skill in resume.Skills -%}
+<p><i>{{ skill.name }}</i>: {{ skill.list | join(",") }}</p>
+{% endfor -%}
 <p>&nbsp;&nbsp;</p>
 
 <h2>Activities</h2>
-{{ #resume.Activities }}
-<p>{{ . }}</p>
-{{ /resume.Activities }}
+{% for activity in resume.Activities -%}
+<p>{{ activity }}</p>
+{% endfor -%}
 <p>&nbsp;&nbsp;</p>
 
 </div>

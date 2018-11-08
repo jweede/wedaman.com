@@ -76,15 +76,14 @@ resume:
         #           "Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
         #       }
     ]
-    Skills: [
-      {name: "Tech Experience"
-      ,list: ["Debian/Fedora Linux", "Mac OS X", "Python", "Java", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion"]
-      }
-      ,
-      {name: "Soft Skills"
-      ,list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
-      }
-    ]
+    Skills:
+
+    - name: "Tech Experience"
+      list: ["Debian/Fedora Linux", "Mac OS X", "Python", "Java", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion"]
+
+    - name: "Soft Skills"
+      list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
+
     Activities: 
         - IBM Extreme Blue Finalist 2010
         - ACM Student Chapter - President 2010
