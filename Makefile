@@ -2,33 +2,25 @@
 DIST := _site
 DIRS := $(DIST) $(DIST)/resume $(DIST)/css
 COPIED := keybase.txt favicon.ico
+COPIED_DIST := $(addprefix $(DIST)/,$(COPIED))
 LESS := $(wildcard less/*.less)
 
 $(DIRS):
 	mkdir -p $@
 
-$(COPIED): $(DIST)
-	cp -l $@ ./$(DIST)/
-
-$(DIST)/index.html: index.md $(DIST)
-	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md
-
-$(DIST)/resume/index.html: $(DIST)/resume/%.%
-	./resume/generate_resume.py
-
-$(DIST)/css/%.css: $(DIST)/css less/%.less
-	lessc less/$(pathsubst %.css,%.less,$(notdir $@)) $@
-
 .PHONY: build
-build: $(DIRS) $(DIST)/index.html \
-		$(addprefix $(DIST)/,$(COPIED)) \
-		$(addprefix $(DIST)/css/,$(pathsubst %.less,%.css,$(notdir $(LESS))))
+build: $(DIRS)
+	cp -l $(COPIED) ./$(DIST)/
+	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md
+	python3 ./resume/generate_resume.py
+	lessc less/default.less _site/css/default.css
+	lessc less/resume.less _site/css/resume.css
 	echo "-*- Site Generated -*-";
 
 .PHONY: publish
 publish: build
 	echo "-*-  Publishing... -*-";
-	aws s3 sync --delete _site/ s3://wedaman.com/
+	aws --profile=personal s3 sync --delete _site/ s3://wedaman.com/
 	echo "-*- We'll do it live! -*-";
 
 # convenience target
@@ -42,4 +34,4 @@ all: publish
 # also unneccesary
 .PHONY: clean
 clean:
-	rm -r ./_site
+	rm -rf ./_site

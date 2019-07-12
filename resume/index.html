@@ -37,15 +37,17 @@
 
 <h2>Skills</h2>
 {% for skill in resume.Skills -%}
-<p><i>{{ skill.name }}</i>: {{ skill.list | join(",") }}</p>
+<p><i>{{ skill.name }}</i>: {{ skill.list | join(", ") }}</p>
 {% endfor -%}
 <p>&nbsp;&nbsp;</p>
 
+{% if resume.Activities -%}
 <h2>Activities</h2>
 {% for activity in resume.Activities -%}
 <p>{{ activity }}</p>
 {% endfor -%}
 <p>&nbsp;&nbsp;</p>
+{% endif -%}
 
 </div>
 
