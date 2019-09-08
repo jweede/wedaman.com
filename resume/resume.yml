@@ -17,9 +17,14 @@ resume:
       "Dates": "February 2015 - Present"
       "Title": "Platform Developer"
       "Desc": >
-        Worked with a small team to build auto-scaling infrastructure with AWS, Ansible, SaltStack, Docker, Jenkins, Postgres, Python, Packer, Terraform, Consul, Hashicorp Vault, Sensu, Sentry, ElasticSearch, Prometheus, Grafana, Nginx.
-        Assisted with ISO security audits.
+        Worked with a small team to build auto-scaling web infrastructure with AWS, Ansible, SaltStack, Docker, Jenkins, Postgres, Python, Packer, Terraform, Consul, Hashicorp Vault, Sensu, Sentry, ElasticSearch, Prometheus, Grafana, Nginx.
+        Built Jenkins testing infrastructure that scales over 300 nodes. Runs 24 hours of testing in 20 mins.
+        Managed AWS costs to stay within $10k/month budget.
+        Setup log monitoring with ElasticSearch, metrics monitoring with Prometheus/Grafana, exception monitoring with sentry, and check monitoring with Sensu.
+        Built configuration management for all our services in Ansible/SaltStack.
+        Assisted with ISO-27001 security audits.
         Researched and Deployed new dev tools such as GitLab, Jenkins, AWS/IAM/LDAP integration.
+        Responded to on-call events as needed.
     - "Company": "Rue La La"
       "Locale": "Boston, MA"
       "Dates": "April 2014 - February 2015"
@@ -27,7 +32,9 @@ resume:
       "Desc": >
         Optimized, refactored, and built new full-stack features for large Django App which involved Python, Nginx, Lua, MySQL, and legacy Java.
         Built a new continuous deployment system with Jenkins, Ansible. Created and fostered adoption for new dev environments utilizing Vagrant, Ansible, CentOS/RHEL 7.
+        Worked with developers to improve development environment/experience.
         Mentored junior devs directly and through code reviews.
+        Responded to on-call events as needed.
     - "Company": "Bullhorn"
       "Locale": "Boston, MA"
       "Dates": "May 2012 - March 2014"
