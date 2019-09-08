@@ -15,13 +15,13 @@ build: $(DIRS)
 	python3 ./resume/generate_resume.py
 	lessc less/default.less _site/css/default.css
 	lessc less/resume.less _site/css/resume.css
-	echo "-*- Site Generated -*-";
+	@echo "-*- Site Generated -*-";
 
 .PHONY: publish
 publish: build
-	echo "-*-  Publishing... -*-";
+	@echo "-*-  Publishing... -*-";
 	aws --profile=personal s3 sync --delete _site/ s3://wedaman.com/
-	echo "-*- We'll do it live! -*-";
+	@echo "-*- We'll do it live! -*-";
 
 # convenience target
 .PHONY: serve
