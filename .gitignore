@@ -3,3 +3,5 @@
 # App Specific
 _site/
 node_modules/
+# terraform
+.terraform/
