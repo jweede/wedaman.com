@@ -24,7 +24,6 @@ data aws_iam_policy_document wedaman_com_bucket_policy {
       type = "AWS"
     }
   }
-  version = "2008-10-17"
 }
 
 
