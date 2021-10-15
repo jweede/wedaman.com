@@ -5,16 +5,18 @@ COPIED := keybase.txt favicon.ico
 COPIED_DIST := $(addprefix $(DIST)/,$(COPIED))
 LESS := $(wildcard less/*.less)
 
+LESSC := ./node_modules/.bin/lessc
+
 $(DIRS):
 	mkdir -p $@
 
 .PHONY: build
 build: $(DIRS)
-	cp -l $(COPIED) ./$(DIST)/
-	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md
-	python3 ./resume/generate_resume.py
-	lessc less/default.less _site/css/default.css
-	lessc less/resume.less _site/css/resume.css
+	cp -l $(COPIED) ./$(DIST)/; \
+	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md; \
+	python3 ./resume/generate_resume.py; \
+	$(LESSC) less/default.less _site/css/default.css; \
+	$(LESSC) less/resume.less _site/css/resume.css;
 	@echo "-*- Site Generated -*-";
 
 .PHONY: publish

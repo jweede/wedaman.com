@@ -12,9 +12,21 @@ resume:
       "Degree": "Bachelors in Computer Science"
       "Year":   "2011"
     Experience:
+    - Company: Kyruus
+      Locale: Boston, MA
+      Dates: November 2019 - Present
+      Title: "Senior Devops Engineer"
+      Desc: >
+        Worked on a small team to support developers and legacy applications through a merger using AWS, SaltStack, Docker, Jenkins, Python, Flask, Node.js, Packer, Terraform, Atlantis, Sentry, ElasticSearch, DataDog, Groovy, CircleCI, Concourse CI, and a little Amazon EKS.
+        Drove, coordinated, and deployed a major CI migration across all engineering teams over the course of a year which improved security, increased reliability, reduced cost, added autoscaling capacity, and enabled teams to self-serve.
+        Worked closely with seven teams to maintain, migrate, and replace critical applications and systems.
+        Assisted management with planning, budgeting, automation, monitoring, SOC2 audits, and evidence gathering,
+        Mentored two junior engineers into promotions.
+        Responded to on-call events as needed.
+        Instituted new processes, automated reviews, and regular preventative measures to prevent future outages.
     - "Company": "Shoobx"
       "Locale": "Boston, MA"
-      "Dates": "February 2015 - Present"
+      "Dates": "February 2015 - November 2019"
       "Title": "Platform Developer"
       "Desc": >
         Worked with a small team to build auto-scaling web infrastructure with AWS, Ansible, SaltStack, Docker, Jenkins, Postgres, Python, Packer, Terraform, Consul, Hashicorp Vault, Sensu, Sentry, ElasticSearch, Prometheus, Grafana, Nginx.
@@ -40,11 +52,11 @@ resume:
       "Dates": "May 2012 - March 2014"
       "Title": "Senior Software Developer"
       "Desc": "Overhauled main CMS product. Principal engineer in a team to design and implement new features and adhere to HTML5 standards. Previously product was IE-only, Quirks-mode, and written over 10 years ago. Used Java, Python, and JavaScript. Instrumental in other company-wide process improvements such as: moving from SVN to Git; code review practices; provisioned development environments; and more reliable release rollout."
-    - "Company":  "IBM - Datapower Group"
-      "Locale":   "Boston, MA"
-      "Dates":    "July 2011 - May 2012"
-      "Title":    "Software Developer"
-      "Desc":     "Implemented new features for remarkably fast XSLT compiler used as part of a high-performance firewall appliance. This involved working with C-style C++ and x86 Assembly. Updated codebase for internationalization, and ported to 64-bit."
+#    - "Company":  "IBM - Datapower Group"
+#      "Locale":   "Boston, MA"
+#      "Dates":    "July 2011 - May 2012"
+#      "Title":    "Software Developer"
+#      "Desc":     "Implemented new features for remarkably fast XSLT compiler used as part of a high-performance firewall appliance. This involved working with C-style C++ and x86 Assembly. Updated codebase for internationalization, and ported to 64-bit."
         # {
         #     "Company": "University of Cincinnati",
         #     "Locale":  "Cincinnati, OH",
@@ -79,12 +91,12 @@ resume:
         #           "Desc":    "Worked as an administrator over a small repair team. Managed supplies, systems, and people. Directly handled customer satisfaction issues, often coordinating with divisions. Diagnosed and resolved software issues while reporting to dev division. During down time, created automation systems to assist technicians using XCode and AppleScript. Two of these systems went on to be used company-wide."
         #       }
     Skills:
-
-    - name: "Tech Experience"
-      list: ["Debian/Ubuntu/Fedora Linux", "Mac OS X", "Python", "Java", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion", "Ansible", "SaltStack", "Terraform", "Packer", "Hashicorp Vault"]
-
-    - name: "Soft Skills"
-      list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
+#
+#    - name: "Tech Experience"
+#      list: ["Debian/Ubuntu/Fedora Linux", "Mac OS X", "Python", "Java", "Haskell", "HTML5", "Javascript", "C/C++", "Git", "Subversion", "Ansible", "SaltStack", "Terraform", "Packer", "Hashicorp Vault"]
+#
+#    - name: "Soft Skills"
+#      list: ["Software Engineering Mentoring", "Process Improvement", "Technical Interviews"]
 
     Activities: 
 #        - IBM Extreme Blue Finalist 2010
