@@ -28,7 +28,7 @@ publish: build
 # convenience target
 .PHONY: serve
 serve: build
-	cd ./_site && python -m SimpleHTTPServer
+	cd ./_site && python3 -m http.server
 
 .PHONY: all
 all: publish

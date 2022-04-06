@@ -12,9 +12,20 @@ resume:
       "Degree": "Bachelors in Computer Science"
       "Year":   "2011"
     Experience:
+#    - Company: Cisco Meraki
+#      Locale: Remote
+#      Dates: May 2022 - Present
+#      Title:
+#      Desc: >
+    - Company: Perch
+      Locale: Boston, MA
+      Dates: December 2021 - Present
+      Title: "Senior Devops Engineer"
+      Desc: >
+         Worked on a two-person team to support an ecommerce platform using AWS, Terraform, Gitlab, Gitlab CI, Python, Django, Postgres. Focused on improving reliability and performance of CI/CD pipelines. Other tasks included investigating database and application performance, troubleshooting CI pipelines with developers, and planning AWS capacity. Responded to on-call events as needed.
     - Company: Kyruus
       Locale: Boston, MA
-      Dates: November 2019 - Present
+      Dates: November 2019 - December 2021
       Title: "Senior Devops Engineer"
       Desc: >
         Worked on a small team to support developers and legacy applications through a merger using AWS, SaltStack, Docker, Jenkins, Python, Flask, Node.js, Packer, Terraform, Atlantis, Sentry, ElasticSearch, DataDog, Groovy, CircleCI, Concourse CI, and a little Amazon EKS.
@@ -47,11 +58,11 @@ resume:
         Worked with developers to improve development environment/experience.
         Mentored junior devs directly and through code reviews.
         Responded to on-call events as needed.
-    - "Company": "Bullhorn"
-      "Locale": "Boston, MA"
-      "Dates": "May 2012 - March 2014"
-      "Title": "Senior Software Developer"
-      "Desc": "Overhauled main CMS product. Principal engineer in a team to design and implement new features and adhere to HTML5 standards. Previously product was IE-only, Quirks-mode, and written over 10 years ago. Used Java, Python, and JavaScript. Instrumental in other company-wide process improvements such as: moving from SVN to Git; code review practices; provisioned development environments; and more reliable release rollout."
+#    - "Company": "Bullhorn"
+#      "Locale": "Boston, MA"
+#      "Dates": "May 2012 - March 2014"
+#      "Title": "Senior Software Developer"
+#      "Desc": "Overhauled main CMS product. Principal engineer in a team to design and implement new features and adhere to HTML5 standards. Previously product was IE-only, Quirks-mode, and written over 10 years ago. Used Java, Python, and JavaScript. Instrumental in other company-wide process improvements such as: moving from SVN to Git; code review practices; provisioned development environments; and more reliable release rollout."
 #    - "Company":  "IBM - Datapower Group"
 #      "Locale":   "Boston, MA"
 #      "Dates":    "July 2011 - May 2012"
