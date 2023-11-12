@@ -1,0 +1,38 @@
+---
+
+sections:
+  wishlist:
+    title: Wishlist
+    desc: Thinking about these things.
+  gc:
+    title: Gift Cards
+    desc: Slightly more personal than cash.
+  extra:
+    title: Unnecessary
+    desc: It's a bit much.
+
+cards:
+- name: Amazon Wishlist
+  desc: Random things I'm considering
+  sec: wishlist
+  img_src: amazon.png
+  price: $??
+  store_name: Amazon
+  store_link: https://www.amazon.com/hz/wishlist/ls/7FUAP2ND1G5H/ref=nav_wishlist_lists_1
+
+- name: Amazon Books
+  desc: Random books I'm considering
+  sec: wishlist
+  img_src: amazon-books.jpeg
+  price: $??
+  store_name: Amazon
+  store_link: https://www.amazon.com/hz/wishlist/ls/1QA1QH6VPVAJI?ref_=list_d_wl_lfu_nav_2
+
+- name: IKEA Wishlist
+  desc: Random furniture I'm considering
+  sec: wishlist
+  # hide: true
+  img_src: ikea.png
+  price: $??
+  store_name: IKEA
+  store_link: https://www.ikea.com/us/en/favourites/receive-share/60291708:1,20499258:1,00508367:1,90525150:1,40507785:1,60511362:1,80541565:1,40246156:1,30564012:1,30549856:1,00485101:1?source=favourites

@@ -12,11 +12,11 @@ resume:
       "Degree": "Bachelors in Computer Science"
       "Year":   "2011"
     Experience:
-#    - Company: Cisco Meraki
-#      Locale: Remote
-#      Dates: May 2022 - Present
-#      Title:
-#      Desc: >
+    - Company: Cisco Meraki
+      Locale: Remote
+      Dates: May 2022 - Present
+      Title: Development Engineer L9
+      Desc: ""
     - Company: Perch
       Locale: Boston, MA
       Dates: December 2021 - Present

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="bulma.css">
+    <style>
+    li{text-decoration:line-through;}
+    .new{text-decoration:none;}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+        {%- for sec_id, sec_obj in sections.items() %}
+            <h1 class="title">{{ sec_obj.title }}</h1>
+            <p class="subtitle">{{ sec_obj.desc }}</p>
+            <div class="columns">
+            {%- for card in get_cards_with_sec_id(sec_id) %}
+                <div class="column{% if card.hide %} is-hidden{% endif %}">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-square">
+                                <img src="{{ card.img_src }}" alt="{{ card.name }}">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="subtitle">{{ card.name }}</p>
+                            {% for line in card.desc.splitlines() -%}
+                            <p>{{ line }}</p>
+                            {%- endfor %}
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">{{ card.price }}</p>
+                            <a class="card-footer-item" href="{{ card.store_link }}">{{ card.store_name }}</a>
+                        </footer>
+                    </div>
+                </div>
+            {% endfor -%}
+            </div>
+        {% endfor -%}
+        </div>
+    </section>
+</body>
+</html>

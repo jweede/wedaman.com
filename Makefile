@@ -12,9 +12,11 @@ $(DIRS):
 
 .PHONY: build
 build: $(DIRS)
+	set -eu; \
 	cp -l $(COPIED) ./$(DIST)/; \
 	pandoc -f markdown -t html5 -o ./$(DIST)/index.html ./index.md; \
 	python3 ./resume/generate_resume.py; \
+	python3 ./wishlist/generate.py; \
 	$(LESSC) less/default.less _site/css/default.css; \
 	$(LESSC) less/resume.less _site/css/resume.css;
 	@echo "-*- Site Generated -*-";

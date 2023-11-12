@@ -12,7 +12,7 @@ OUTPUT_FILE = HERE + "/../_site/resume/index.html"
 
 def generate_resume():
     with open(YAML_FILE) as fp:
-        context = yaml.load(fp)
+        context = yaml.safe_load(fp)
     # skills = context["resume"]["Skills"]
     # for skillObj in skills:
     #     skillObj["list"] = ", ".join(skillObj["list"])
