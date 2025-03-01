@@ -5,4 +5,8 @@ _site/
 node_modules/
 # terraform
 .terraform/
+terraform.tfstate
 .idea/
+*.backup
+# secrets
+.envrc
